@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/netflix.css" />
+  </head>
+  <body>
+    <header>
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/netflix_logo.png"
+              alt="netflix_logo"
+              width="100"
+              height="40"
+            />
+          </a>
+          <div class="btn">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-light"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" aria-current="page" href="#"
+                    >TV Shows</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Movies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Recently Added</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">My List</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col text-light d-flex flex-row align-items-center justify-content-end"
+          >
+            <i class="bi bi-search me-2"></i>
+            <p class="navFont text-light mb-0 me-2">KIDS</p>
+            <i class="bi bi-bell-fill me-2"></i>
+            <div class="dropdown">
+              <img
+                src="assets/kids_icon.png"
+                class="dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                width="25"
+              />
+
+              <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- FINE NAV -->
+    <!-- SECTION -->
+    <section>
+      <div class="container-fluid pb-3">
+        <div class="row">
+          <div
+            class="col col-8 d-flex flex-column flex-md-row align-items-md-center"
+          >
+            <h2 class="text-light me-3">TV Shows</h2>
+            <div class="dropdown">
+              <button
+                class="btn btn-dark border border-light rounded-0 dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="background-color: black"
+              >
+                Genres
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Comedy</a></li>
+                <li><a class="dropdown-item" href="#">Drama</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col d-flex align-items-center justify-content-end">
+            <button
+              class="btn btn-dark border border-light rounded-0"
+              type="submit"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+            <button
+              class="btn btn-dark border border-light rounded-0"
+              type="submit"
+            >
+              <i class="bi bi-grid"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FINE SECTION -->
+    <main>
+      <!-- CAROSELLO -->
+      <div class="carousel-section">
+        <h5 class="text-light ms-3">Trending Now</h5>
+        <div class="container text-center mb-4">
+          <div class="row mx-auto my-auto justify-content-center">
+            <div
+              id="recipeCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="col col-2">
+                    <div class="card">
+                      <div class="card-img d-flex flex-row">
+                        <img
+                          src="assets/media/media0.webp"
+                          alt="sherlock"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media1.jpg"
+                          alt="american factory"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media2.webp"
+                          alt="the good place"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media3.webp"
+                          alt="genius"
+                          class="img-fluid"
+                        />
+
+                        <img
+                          src="assets/media/media4.jpg"
+                          alt="cuba"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media5.webp"
+                          alt="the china hustle"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="card-img-overlay">Slide 1</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col col-2">
+                    <div class="card">
+                      <div class="card-img d-flex flex-row">
+                        <img
+                          src="assets/media/media6.jpg"
+                          alt="the social dilemma"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media7.webp"
+                          alt="arog"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media8.webp"
+                          alt="yahsi bati"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media9.jpg"
+                          alt="connected"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media10.jpg"
+                          alt="spy"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media11.jpg"
+                          alt="the college"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="card-img-overlay">Slide 2</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col col-2">
+                    <div class="card">
+                      <div class="card-img d-flex flex-row">
+                        <img
+                          src="assets/media/media12.jpg"
+                          alt="tribes of europa"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media13.jpg"
+                          alt="narcos"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media14.webp"
+                          alt="breaking bad"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media15.jpg"
+                          alt="explained"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media16.webp"
+                          alt="rick and morty"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media17.jpg"
+                          alt="the white helmets"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="card-img-overlay">Slide 3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev bg-transparent w-aut"
+                href="#recipeCarousel"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a
+                class="carousel-control-next bg-transparent w-aut"
+                href="#recipeCarousel"
+                role="button"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="carousel-section">
+        <h5 class="text-light ms-3">Watch It Again</h5>
+        <div class="container text-center mb-4">
+          <div class="row mx-auto my-auto justify-content-center">
+            <div
+              id="recipeCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="col col-2">
+                    <div class="card">
+                      <div class="card-img d-flex flex-row">
+                        <img
+                          src="assets/media/media18.jpg"
+                          alt="sherlock"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media19.webp"
+                          alt="american factory"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media20.jpg"
+                          alt="the good place"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media21.webp"
+                          alt="genius"
+                          class="img-fluid"
+                        />
+
+                        <img
+                          src="assets/media/media22.webp"
+                          alt="cuba"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media23.webp"
+                          alt="the china hustle"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="card-img-overlay">Slide 1</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col col-2">
+                    <div class="card">
+                      <div class="card-img d-flex flex-row">
+                        <img
+                          src="assets/media/media24.jpg"
+                          alt="the social dilemma"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media25.webp"
+                          alt="arog"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media8.webp"
+                          alt="yahsi bati"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media29.jpg"
+                          alt="connected"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media10.jpg"
+                          alt="spy"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media5.webp"
+                          alt="the college"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="card-img-overlay">Slide 2</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col col-2">
+                    <div class="card">
+                      <div class="card-img d-flex flex-row">
+                        <img
+                          src="assets/media/media30.jpg"
+                          alt="tribes of europa"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media13.jpg"
+                          alt="narcos"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media12.jpg"
+                          alt="breaking bad"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media7.webp"
+                          alt="explained"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media2.webp"
+                          alt="rick and morty"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media17.jpg"
+                          alt="the white helmets"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="card-img-overlay">Slide 3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev bg-transparent w-aut"
+                href="#recipeCarousel"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a
+                class="carousel-control-next bg-transparent w-aut"
+                href="#recipeCarousel"
+                role="button"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="carousel-section">
+        <h5 class="text-light ms-3">New Releases</h5>
+        <div class="container text-center mb-4">
+          <div class="row mx-auto my-auto justify-content-center">
+            <div
+              id="recipeCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="col col-2">
+                    <div class="card">
+                      <div class="card-img d-flex flex-row">
+                        <img
+                          src="assets/media/media0.webp"
+                          alt="sherlock"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media1.jpg"
+                          alt="american factory"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media2.webp"
+                          alt="the good place"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media3.webp"
+                          alt="genius"
+                          class="img-fluid"
+                        />
+
+                        <img
+                          src="assets/media/media4.jpg"
+                          alt="cuba"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media5.webp"
+                          alt="the china hustle"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="card-img-overlay">Slide 1</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col col-2">
+                    <div class="card">
+                      <div class="card-img d-flex flex-row">
+                        <img
+                          src="assets/media/media6.jpg"
+                          alt="the social dilemma"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media7.webp"
+                          alt="arog"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media8.webp"
+                          alt="yahsi bati"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media9.jpg"
+                          alt="connected"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media10.jpg"
+                          alt="spy"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media11.jpg"
+                          alt="the college"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="card-img-overlay">Slide 2</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col col-2">
+                    <div class="card">
+                      <div class="card-img d-flex flex-row">
+                        <img
+                          src="assets/media/media12.jpg"
+                          alt="tribes of europa"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media13.jpg"
+                          alt="narcos"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media14.webp"
+                          alt="breaking bad"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media15.jpg"
+                          alt="explained"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media16.webp"
+                          alt="rick and morty"
+                          class="img-fluid"
+                        />
+                        <img
+                          src="assets/media/media17.jpg"
+                          alt="the white helmets"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="card-img-overlay">Slide 3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev bg-transparent w-aut"
+                href="#recipeCarousel"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a
+                class="carousel-control-next bg-transparent w-aut"
+                href="#recipeCarousel"
+                role="button"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FINE CAROSELLI -->
+    </main>
+    <!-- FOOTER -->
+    <footer class="px-lg-5 mt-lg-5">
+      <div class="icon text-muted">
+        <i class="bi bi-facebook me-2"></i>
+        <i class="bi bi-instagram me-2"></i>
+        <i class="bi bi-twitter me-2"></i>
+        <i class="bi bi-youtube me-2"></i>
+      </div>
+      <div class="rov text-muted d-flex">
+        <div class="col">
+          <ul class="list-unstyled">
+            <li>Audio and Subtitles</li>
+            <li>Media Center</li>
+            <li>Privacy</li>
+            <li>Contact Us</li>
+          </ul>
+          <button class="border border-light bg-dark text-light text-muted">
+            Service Code
+          </button>
+        </div>
+        <div class="col">
+          <ul class="list-unstyled">
+            <li>Audio Description</li>
+            <li>Investor Relation</li>
+            <li>Legal notices</li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul class="list-unstyled">
+            <li>Help Center</li>
+            <li>Jobs</li>
+            <li>Cookie preferences</li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul class="list-unstyled">
+            <li>Gift Cards</li>
+            <li>Terms of Use</li>
+            <li>Corporate Information</li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-muted mt-2">
+        &copy; 1997-2019 Netflix, inc. {i-0d00fcda9c0de}
+      </p>
+    </footer>
+    <!-- Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/netflix.js"></script>
+  </body>
+</html>
